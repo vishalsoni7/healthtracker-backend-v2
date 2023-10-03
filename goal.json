@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Fitness Challenge",
+    "description": "Lose 5 pounds in a month",
+    "targetDate": "2023-10-31",
+    "calories": 1500,
+    "status": "In Progress"
+  },
+  {
+    "name": "Learn JavaScript",
+    "description": "Complete a JavaScript course",
+    "targetDate": "2023-11-15",
+    "calories": 1000,
+    "status": "In Progress"
+  },
+  {
+    "name": "Read 10 Books",
+    "description": "Read 10 books within the next three months",
+    "targetDate": "2023-12-31",
+    "calories": 1300,
+    "status": "In Progress"
+  },
+  {
+    "name": "Health Checkup",
+    "description": "Schedule and complete a health checkup",
+    "targetDate": "2024-01-15",
+    "calories": 1200,
+    "status": "In Progress"
+  },
+  {
+    "name": "Meditation Challenge",
+    "description": "Practice meditation daily for 30 days",
+    "targetDate": "2023-11-30",
+    "calories": 999,
+    "status": "In Progress"
+  }
+]

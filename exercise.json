@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Running",
+    "duration": 30
+  },
+  {
+    "name": "Cycling",
+    "duration": 45
+  },
+  {
+    "name": "Swimming",
+    "duration": 60
+  },
+  {
+    "name": "Walking",
+    "duration": 20
+  },
+  {
+    "name": "Weightlifting",
+    "duration": 40
+  },
+  {
+    "name": "Yoga",
+    "duration": 60
+  },
+  {
+    "name": "Dancing",
+    "duration": 30
+  }
+]
