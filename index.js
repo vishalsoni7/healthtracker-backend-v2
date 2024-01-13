@@ -12,14 +12,14 @@ const goalRouter = require("./routes/goal.router");
 
 app.use(express.json());
 
-const corsOptions = {
-  origin: "*",
-  methods: "GET, HEAD, PUT, PATCH, POST, DELETE",
-  credentials: true,
-  optionsSuccessStatus: 204,
-};
+// const corsOptions = {
+//   origin: "*",
+//   methods: "GET, HEAD, PUT, PATCH, POST, DELETE",
+//   credentials: true,
+//   optionsSuccessStatus: 204,
+// };
 
-app.use(cors(corsOptions));
+app.use(cors("*"));
 
 dataBase();
 
