@@ -10,21 +10,16 @@ const foodRouter = require("./routes/food.router");
 
 const goalRouter = require("./routes/goal.router");
 
-// const { seedExercise } = require('./services/exercise.service')
-// const { seedFood } = require('./services/food.service')
-// const { seedGoal } = require('./services/goal.servise')
-// seedExercise()
-// seedFood()
-// seedGoal()
-
 app.use(express.json());
 
-app.use(
-  cors({
-    origin: "https://healthtracking.netlify.app",
-    credentials: true,
-  }),
-);
+const corsOptions = {
+  origin: "*",
+  methods: "GET, HEAD, PUT, PATCH, POST, DELETE",
+  credentials: true,
+  optionsSuccessStatus: 204,
+};
+
+app.use(cors(corsOptions));
 
 dataBase();
 
