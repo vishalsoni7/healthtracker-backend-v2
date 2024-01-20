@@ -23,6 +23,8 @@ app.use("/foods", foodRouter);
 
 app.use("/goals", goalRouter);
 
-app.listen(3000, () => {
-  console.log("server started.");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
