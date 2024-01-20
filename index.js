@@ -8,10 +8,10 @@ const exerciseRouter = require("./routes/exercise.router");
 const foodRouter = require("./routes/food.router");
 const goalRouter = require("./routes/goal.router");
 
+dataBase();
+
 app.use(express.json());
 app.use(cors("*"));
-
-dataBase();
 
 app.get("/", (req, res) => {
   res.send("Assignment Seventeen");
