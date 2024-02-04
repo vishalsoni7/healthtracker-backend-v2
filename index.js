@@ -23,9 +23,7 @@ app.use((err, req, res, next) => {
 });
 
 app.use("/exercises", exerciseRouter);
-
 app.use("/foods", foodRouter);
-
 app.use("/goals", goalRouter);
 
 const PORT = process.env.PORT || 3000;

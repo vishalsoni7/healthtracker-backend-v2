@@ -1,29 +1,28 @@
 const mongoose = require('mongoose');
-
 const Exercise = require('../models/exercise.model')
 
-const fs = require('fs');
-const jsonData = fs.readFileSync('exercise.json', 'utf8');
-const exerciseArray = JSON.parse(jsonData);
+// const fs = require('fs');
+// const jsonData = fs.readFileSync('exercise.json', 'utf8');
+// const exerciseArray = JSON.parse(jsonData);
 
-const seedExercise = async () => {
-  try {
-    for (const exerciseData of exerciseArray) {
-      const newExercise = new Exercise({
-        name: exerciseData.name,
-        duration: exerciseData.duration,
-        caloriesBurned: exerciseData.caloriesBurned
-      })
-      await newExercise.save();
-      console.log(`Exercise ${newExercise.name} seeded.`)
-    }
-    console.log('Database seeding completed.')
-  } catch (error) {
-    console.error('Error while seeding exercise database.', error)
-  } finally {
-    mongoose.disconnect()
-  }
-}
+// const seedExercise = async () => {
+//   try {
+//     for (const exerciseData of exerciseArray) {
+//       const newExercise = new Exercise({
+//         name: exerciseData.name,
+//         duration: exerciseData.duration,
+//         caloriesBurned: exerciseData.caloriesBurned
+//       })
+//       await newExercise.save();
+//       console.log(`Exercise ${newExercise.name} seeded.`)
+//     }
+//     console.log('Database seeding completed.')
+//   } catch (error) {
+//     console.error('Error while seeding exercise database.', error)
+//   } finally {
+//     mongoose.disconnect()
+//   }
+// }
 
 const getAllExercise = async () => {
   try {
