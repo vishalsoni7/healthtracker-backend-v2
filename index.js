@@ -11,10 +11,15 @@ const goalRouter = require("./routes/goal.router");
 dataBase();
 
 app.use(express.json());
-app.use(cors("*"));
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("Assignment Seventeen");
+});
+
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({ error: "Something went wrong" });
 });
 
 app.use("/exercises", exerciseRouter);
